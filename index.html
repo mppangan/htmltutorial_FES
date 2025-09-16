@@ -6,94 +6,84 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-        <section>
-            <nav>
-                 <img src="./assets/FES.svg" class="logo" alt="">
-                 <ul>
-                    <li><a href="about">About</a></li>
-                    <li><a href="discord">Discord</a></li>
-                    <li><a href="contact">Contact</a></li>
-                 </ul>
-            </nav>
-            <header>
-                <div class="row">
-                <div class="home__description">
-                    <h1>Best place to learn Frontend</h1>
-                    <p>Go from absolute beginner to pro with a simplified process</p>
-                    <button>Start Now</button>
-                </div>
-                <figure>
-                    <img src="./assets/laptop.png" alt="Homepage Image">
-                </figure>
-                </div>
-            </header>
-        </section>
+<section>
+    <nav>
+        <img src="./assets/FES.svg" class="logo" alt="">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="row">
+         <div class="home__description">
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">Go from being an absolute beginner to pro with a simplified process </p>
+            <button class="home__description--button">Start Now</button>
+        </div>
+        <figure>
+            <img src="./assets/laptop.png" alt="Homepage Image">
+        </figure>
+     </div>
+    </header>
+</section>
+
 <main>
-    <section>
+    <section id="about">
     <h2>About</h2>
     <div class="row">
-
-    <div class="section__description">  
-    <div class="section__description--wrapper ">
-        <p class="section__description--para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae numquam molestias est, consequatur quod aut aliquam, nesciunt quam veniam itaque neque ipsa tenetur accusamus a saepe corrupti in non.
-        </p>
-        <p class="section__description--para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis cum, iure alias facere nobis sint, reiciendis nemo facilis assumenda, doloremque similique ea iusto neque repellat error. Maiores quas ipsam cum?
-        </p>
-    </div>
-    <figure class="about__img--wrapper">
-        <img src="./assets/about.jpg" alt="">
-    </figure>
-    </div>
-    </div>
-    </section>
-
-    <section>
-    <h2>Discord</h2>
-    <div class="row">
     <div class="section__description">
-    <figure class="about__img--wrapper">
-        <img src="assets/discord.png" alt="Discord">
+    <div class="section__description--wrapper">
+    <p class="section__description--para">Frontend Simplified is a community that helps absolute beginners learn frontend development in a simplified way. We provide resources, tutorials, and a supportive community to help you on your learning journey.
+    </p>
+    </div>
+    <figure class="about__img--wrapper"></figure>
+        </div>
+        </div>
+        <img src="./assets/about.jpg" alt="About Image">
     </figure>
-    <div>
-        <p class="section__description--para">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quis hic vero deleniti porro ipsum iure iste, praesentium quae quo molestiae. Soluta aliquam, ab ipsum cum adipisci doloremque et veritatis?
-
-        </p>
-        <p class="section__description--para">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae rerum aliquam fugit reiciendis eaque molestias numquam dicta accusamus neque debitis magnam minima explicabo, recusandae hic natus tenetur laborum? Consequatur, velit.
-
-        </p>
-    </div>
-    </div>
+ </div>
+</div>
 </section>
 
-    <section>
-    <h2>Contact</h2>
-    <form action="">
-        <span>Email</span>
-        <input type="email" placeholder="jane@example.com">
-        <span>Message</span>
-        <textarea type="text" placeholder="Cool website, lets get connected! "></textarea>
+    <section id="discord">
+        <h2>Discord</h2>
+        <div class="row">
+        <div class="section__description">
+        </div>
+        <figure class="about__img--wrapper">
+            <img src="./assets/discord.png" alt="Discord Image">
+        </figure>
+        <div class="section__description--wrapper">
+        <p class="section__description--para">Join our Discord community to connect with other learners, ask questions, and get support on your learning journey.</p>
+        </div>    
+      </div>
+    </section>
+        
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="">
+            <span>Email</span>
+            <input type="email" placeholder="jane@example.com" required>
+            <span>Message</span>
+            <textarea type="text" required placeholder="Cool website, lets get Connected!" required></textarea>
         <button>Contact Us!</button>
-</form>
-</section>
+        </form>
+    </section>
 </main>
 
 <footer>
     <img class="footer__logo" src="./assets/FES.svg" alt="">
     <div class="footer__links">
-        <a class="footer__link"href="#about">About</a>
-        <a class="footer__link"href="#discord">Discord</a>
-        <a class="footer__link"href="#contact">Contact</a>
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
         <a class="footer__link"href="">Courses</a>
-        </div>
-  </footer>
-  <div>
-    <p>Copyright Frontend Simplified</p>
-
-  </div>
+    </div>
+    <p>&copy; 2025 Frontend Simplified. All rights reserved.</p>
+</footer>
 </body>
 </html>

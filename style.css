@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
- font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
     height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 16px;
     background-color: #cafdff;
@@ -28,11 +29,9 @@ h1 {
     font-size: 72px;
 }
 
-.subheader {
+p.subheader {
     font-size: 36px;
-    margin: 16px 0 24px 0;
 }
-
 button {
     background-color: #05c7cf;
     color: white;
@@ -46,8 +45,6 @@ a {
     color: black;
     font-size: 24px;
     font-weight: 700;
-
-
 }
 
 .logo {
@@ -61,7 +58,7 @@ ul {
 li {
     list-style-type: none;
     padding-left: 16px;
-}
+    }
 
 .row {
     width: 100%;
@@ -69,7 +66,7 @@ li {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #about,
@@ -79,14 +76,13 @@ footer {
     padding: 48px 0;
 }
 
-/*
-ABOUT
-*/
+/* ABOUT */
 
 #about {
     background-color: #f8ffdc;
 }
-h2 {
+
+#about h2 {
     font-size: 60px;
     text-align: center;
     margin-bottom: 24px;
@@ -94,13 +90,12 @@ h2 {
 
 .section__description {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .about__img--wrapper {
     width: 40%;
-    padding: 0 24px;
 }
 
 img {
@@ -109,6 +104,10 @@ img {
 
 .section__description--wrapper {
     width: 60%;
+}
+
+.about__img--wrapper,
+.section__description--wrapper {
     padding: 0 24px;
 }
 
@@ -118,39 +117,35 @@ img {
     margin-bottom: 24px;
 }
 
-/*
-DISCORD
-*/
+/* DISCORD */
 
 #discord {
-    background-color: #cefeff;
+    padding: 48px 0;
+    background-color: #e0f7ff;
 }
 
-/*
-CONTACT
-*/
+/* CONTACT */
 #contact {
     background-color: #dce9ff;
 }
 
 form {
-
     width: 100%;
-    max-width: 600px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea {
     margin-bottom: 24px;
-    font-size: 20px;
     padding: 6px 12px;
+    font-size: 20px;
 }
 
-/*
-FOOTER
-*/
+/* FOTER */
 
 footer {
     background-color: #aaf5ff;
@@ -160,9 +155,8 @@ footer {
 }
 
 .footer__logo {
-    min-width: 480px;
+    max-width: 480px;
     margin-bottom: 16px;
-
 }
 
 .footer__links {
@@ -173,22 +167,66 @@ footer {
     padding: 0 16px;
 }
 
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
 
-@media (max-width; 728) {
-  .row {
-    flex-direction: column;
-  }  
-.home__description {
-    margin-bottom: 24px;
-}
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-h1 {
-    text-align: center;
-    font-size: 60px;
-}
+    .home__description--button {
+        max-width: 240px;
+    }
 
-.subheader {
-    text-align: center;
-}
+    h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .subheader {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    ul {
+        display: none 
+    }
+
+    .section__description {
+        flex-direction: column;
+    }
+
+    .section__description--wrapper {
+        width: 100%;
+    }
+
+    .about__img--wrapper {
+        width: 100%;
+    }
+
+    #discord.section__description {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+
+    .footer__logo {
+        max-width: 360px;
+    }
+
+    .footer__link {
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links {
+        margin-bottom: 24px;
+    }
 }
